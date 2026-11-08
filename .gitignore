@@ -1,0 +1,14 @@
+node_modules
+dist
+/release/
+/coverage/
+*.tsbuildinfo
+.DS_Store
+*.local
+*.log
+.vite
+.npm-cache
+.pnpm-store
+.env
+.env.*
+!.env.example

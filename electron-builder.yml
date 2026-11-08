@@ -1,0 +1,42 @@
+appId: cn.beadloom.desktop
+productName: 豆格 Beadloom
+copyright: Copyright © 2026 Beadloom
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+extraResources:
+  - from: build/icon.png
+    to: icon.png
+asar: true
+npmRebuild: false
+compression: maximum
+electronDist: node_modules/electron/dist
+win:
+  executableName: Beadloom
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  artifactName: Beadloom-${version}-${arch}-Setup.${ext}
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: 豆格 Beadloom
+  deleteAppDataOnUninstall: false
+  installerLanguages:
+    - zh_CN
+portable:
+  artifactName: Beadloom-${version}-${arch}-Portable.${ext}
+  requestExecutionLevel: user

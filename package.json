@@ -1,0 +1,35 @@
+{
+  "name": "beadloom",
+  "productName": "豆格 Beadloom",
+  "description": "本地运行的拼豆图纸生成、编辑与导出软件",
+  "author": "Beadloom",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "desktop:run": "pnpm build && electron electron/main.mjs",
+    "desktop:pack": "pnpm build && electron-builder --win dir --x64",
+    "desktop:build": "pnpm build && electron-builder --win --x64"
+  },
+  "dependencies": {
+    "lucide-react": "^1.25.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "electron": "43.1.1",
+    "electron-builder": "26.15.7",
+    "typescript": "~7.0.2",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
+}

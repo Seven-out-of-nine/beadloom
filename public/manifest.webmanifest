@@ -1,0 +1,21 @@
+{
+  "name": "豆格 Beadloom · 拼豆图纸生成器",
+  "short_name": "豆格",
+  "description": "在本机把图片转换成可编辑、可打印的拼豆图纸。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2f1ec",
+  "theme_color": "#f7f6f1",
+  "categories": ["design", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
